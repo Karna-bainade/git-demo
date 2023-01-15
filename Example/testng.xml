@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel='tests' thread-count='5'>
+	<!-- <listeners> <listener class-name="test2.RetryListnerClass"></listener> 
+		</listeners> -->
+	<!-- 
+	<test name="Test1">
+		<parameter name="browserType" value="IE"></parameter> 
+		<classes>
+			<class name="test2.Test1" />
+		</classes>
+
+	</test>
+ -->
+	<test name="Test2">
+		<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="test2.Test1" />
+		</classes>
+	</test>
+  
+	<test name="Test3">
+	<parameter name="browserType" value="edge"></parameter>
+		<classes>
+			<class name="test2.Test1" />
+		</classes>
+	</test>
+	
+	<test name="Test4">
+	<parameter name="browserType" value="firefox"></parameter>
+		<classes>
+			<class name="test2.Test1" />
+		</classes>
+	</test>
+</suite> 

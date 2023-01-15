@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserType" value="firefox"/>
+  <test parallel="tests" name="Test2(failed)">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="test2.Test1">
+        <methods>
+          <include name="mailTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test2.Test1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test parallel="tests" name="Test3(failed)">
+    <parameter name="browserType" value="edge"/>
+    <classes>
+      <class name="test2.Test1">
+        <methods>
+          <include name="mailTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test2.Test1 -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test parallel="tests" name="Test4(failed)">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="test2.Test1">
+        <methods>
+          <include name="mailTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test2.Test1 -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Suite] -->
